@@ -7,22 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CadeMeuMedico.Models
+namespace Domain.Entities
 {
-    using System;
     using System.Collections.Generic;
-    
-    public partial class Cidades
+
+    public partial class Especialidades
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cidades()
+        public Especialidades()
         {
             this.Medicos = new HashSet<Medicos>();
         }
-    
-        public int IDCidade { get; set; }
+
+        public int IDEspecialidade { get; set; }
         public string Nome { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Medicos> Medicos { get; set; }
     }

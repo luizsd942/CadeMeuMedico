@@ -7,14 +7,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CadeMeuMedico.Models
+namespace Domain.Entities
 {
     using System;
     using System.Collections.Generic;
     
     public partial class Medicos
     {
-        public long IDMedico { get; set; }
+        public int IDMedico { get; set; }
         public string CRM { get; set; }
         public string Nome { get; set; }
         public string Endereco { get; set; }
@@ -26,7 +26,7 @@ namespace CadeMeuMedico.Models
         public int IDCidade { get; set; }
         public int IDEspecialidade { get; set; }
     
-        public virtual Cidades Cidades { get; set; }
-        public virtual Especialidades Especialidades { get; set; }
+        public virtual Cidades Cidade { get; set; }
+        public virtual Especialidades Especialidade { get; set; }
     }
 }

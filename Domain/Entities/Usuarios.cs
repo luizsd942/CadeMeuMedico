@@ -7,14 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CadeMeuMedico.Models
+namespace Domain.Entities
 {
-    using System;
-    using System.Collections.Generic;
-    
+
     public partial class Usuarios
     {
-        public long IDUsuario { get; set; }
+        public int IDUsuario { get; set; }
         public string Nome { get; set; }
         public string Login { get; set; }
         public string Senha { get; set; }

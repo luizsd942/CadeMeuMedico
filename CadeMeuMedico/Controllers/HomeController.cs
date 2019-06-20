@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace CadeMeuMedico.Controllers
 {
-    public class ViewTesteController : Controller
+    public class HomeController : Controller
     {
         // GET: ViewTeste
         public ActionResult Index()
